@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "PrefixHeader.pch"
+#import "ChapterViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    ChapterViewController *cvc = [[ChapterViewController alloc] init];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:cvc];
+    
+    self.window.rootViewController = nav;
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    cvc.title = @"主页";
+    
+    cvc.navigationController.navigationBar.barTintColor = NAVBAR_CORLOR;
+    
     return YES;
 }
 

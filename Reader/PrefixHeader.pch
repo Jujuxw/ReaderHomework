@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  Reader
+//
+//  Created by juju on 2017/3/1.
+//  Copyright © 2017年 juju. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+
+#define NAVBAR_CORLOR ([UIColor colorWithRed: 0 / 255.0 green: 146 /255.0 blue: 53 / 255.0 alpha:1])
+
+#define UISCREENFRAME (self.view.frame.size)
+
+#define FONT_NAMESIZE ([UIFont fontWithName:@"Courier" size:22])
