@@ -10,15 +10,13 @@
 
 #import "PrefixHeader.pch"
 
-#import "DetailsView.h"
-
-#import "HighlightingTextStorage.h"
-
 #import <CoreText/CoreText.h>
 
 @interface BaseViewController ()<UITextViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *wordHighligtArray;
+
+@property (nonatomic, strong) NSAttributedString *attString;
 
 @property (nonatomic, strong) DBAccess *db;
 
@@ -105,15 +103,15 @@
     self.view.backgroundColor = [UIColor colorWithRed:216 / 255.0 green:240 / 255.0 blue:227 / 255.0 alpha:1];
     
     //set text
-    NSTextStorage *passage = [[NSTextStorage alloc] initWithString: self.content];
+    NSTextStorage *passage = [[NSTextStorage alloc] initWithString:self.content];
 
     //set Layout
-    LayoutManager *contentLayout = [[LayoutManager alloc] init];
+    NSLayoutManager *contentLayout = [[NSLayoutManager alloc] init];
     
     [passage addLayoutManager: contentLayout];
     
     //set textContainer
-    NSTextContainer *contentContainer = [[NSTextContainer alloc] initWithSize:UISCREENFRAME];
+    NSTextContainer *contentContainer = [[NSTextContainer alloc] initWithSize:self.view.bounds.size];
     
     [contentLayout addTextContainer: contentContainer];
     
@@ -169,27 +167,7 @@
     [alert addAction: [UIAlertAction actionWithTitle: @"确定" style:UIAlertActionStyleCancel handler:nil]];
     
     [self presentViewController:alert animated:true completion:nil];
-    
-//    DetailsView *detailView = [[[NSBundle mainBundle] loadNibNamed: @"DetailViewController" owner: self options:nil] firstObject];
-//    
-//    detailView.frame = self.view.bounds;
-//    
-//    detailView.wordLevelText = [[NSMutableAttributedString alloc] initWithString:wordLeve];
-//    
-//    detailView.wordText = [[NSMutableAttributedString alloc] initWithString:[self.content substringWithRange:characterRange]];
-//    
-//    detailView.acceptBtnText = [@"❤️，收藏" uppercaseString];
-//    
-//    detailView.wordViewBackgroundColor = [UIColor whiteColor];
-//    
-//    detailView.cornerRadius = 10;
-//    
-//    detailView.showViewBgAlpha = 0.7;
-//    
-//    detailView.hideClodeBtn = true;
-//    
-//    [self.view addSubview:detailView];
-    
+        
     return YES;
 }
 
@@ -294,7 +272,7 @@
         
         NSRange range = [textView.text rangeOfString: word options: NSRegularExpressionSearch];
     
-        LayoutManager *contentLayout = [[LayoutManager alloc] init];
+        NSLayoutManager *contentLayout = [[NSLayoutManager alloc] init];
         
         [passage addLayoutManager: contentLayout];
         

@@ -16,11 +16,7 @@
 		A50C6ECD1E658973002EF87D /* ReaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A50C6ECC1E658973002EF87D /* ReaderUITests.m */; };
 		A55BB5CA1E6642C40022AEF1 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BB5C91E6642C40022AEF1 /* BaseViewController.m */; };
 		A55BB5CC1E664B580022AEF1 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55BB5CB1E664B580022AEF1 /* CoreText.framework */; };
-		A55BB5CF1E6669E60022AEF1 /* LayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BB5CE1E6669E60022AEF1 /* LayoutManager.m */; };
 		A55BB5D11E667D3E0022AEF1 /* juju.JPG in Resources */ = {isa = PBXBuildFile; fileRef = A55BB5D01E667D3E0022AEF1 /* juju.JPG */; };
-		A55BB5D81E670BDA0022AEF1 /* HighlightingTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BB5D71E670BDA0022AEF1 /* HighlightingTextStorage.m */; };
-		A55BB5E01E6729410022AEF1 /* DetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BB5DF1E6729410022AEF1 /* DetailsView.m */; };
-		A55BB5E21E6729700022AEF1 /* DetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A55BB5E11E6729700022AEF1 /* DetailsView.xib */; };
 		A5CDD29D1E65AF58000AD393 /* ChapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CDD29C1E65AF58000AD393 /* ChapterViewController.m */; };
 		A5CDD29F1E65AFBC000AD393 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CDD29E1E65AFBC000AD393 /* libsqlite3.tbd */; };
 		A5CDD2A11E65B1EA000AD393 /* Database.db in Resources */ = {isa = PBXBuildFile; fileRef = A5CDD2A01E65B1EA000AD393 /* Database.db */; };
@@ -62,15 +58,8 @@
 		A55BB5C81E6642C40022AEF1 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		A55BB5C91E6642C40022AEF1 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		A55BB5CB1E664B580022AEF1 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		A55BB5CD1E6669E60022AEF1 /* LayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutManager.h; sourceTree = "<group>"; };
-		A55BB5CE1E6669E60022AEF1 /* LayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutManager.m; sourceTree = "<group>"; };
 		A55BB5D01E667D3E0022AEF1 /* juju.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = juju.JPG; sourceTree = "<group>"; };
 		A55BB5D21E66C2B40022AEF1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		A55BB5D61E670BDA0022AEF1 /* HighlightingTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighlightingTextStorage.h; sourceTree = "<group>"; };
-		A55BB5D71E670BDA0022AEF1 /* HighlightingTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighlightingTextStorage.m; sourceTree = "<group>"; };
-		A55BB5DE1E6729410022AEF1 /* DetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsView.h; sourceTree = "<group>"; };
-		A55BB5DF1E6729410022AEF1 /* DetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsView.m; sourceTree = "<group>"; };
-		A55BB5E11E6729700022AEF1 /* DetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsView.xib; sourceTree = "<group>"; };
 		A5CDD29B1E65AF58000AD393 /* ChapterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChapterViewController.h; path = ../ChapterViewController.h; sourceTree = "<group>"; };
 		A5CDD29C1E65AF58000AD393 /* ChapterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChapterViewController.m; path = ../ChapterViewController.m; sourceTree = "<group>"; };
 		A5CDD29E1E65AFBC000AD393 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -133,7 +122,6 @@
 				A5E190491E6839FF00331F4C /* Database */,
 				A5E190471E6839F500331F4C /* Menu */,
 				A5E190461E6839E900331F4C /* Detail */,
-				A5E190451E6839E400331F4C /* Highlight */,
 				A5CDD2A01E65B1EA000AD393 /* Database.db */,
 				A50C6EAA1E658973002EF87D /* AppDelegate.h */,
 				A50C6EAB1E658973002EF87D /* AppDelegate.m */,
@@ -183,25 +171,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A5E190451E6839E400331F4C /* Highlight */ = {
-			isa = PBXGroup;
-			children = (
-				A55BB5D61E670BDA0022AEF1 /* HighlightingTextStorage.h */,
-				A55BB5D71E670BDA0022AEF1 /* HighlightingTextStorage.m */,
-				A55BB5CD1E6669E60022AEF1 /* LayoutManager.h */,
-				A55BB5CE1E6669E60022AEF1 /* LayoutManager.m */,
-			);
-			name = Highlight;
-			sourceTree = "<group>";
-		};
 		A5E190461E6839E900331F4C /* Detail */ = {
 			isa = PBXGroup;
 			children = (
 				A55BB5C81E6642C40022AEF1 /* BaseViewController.h */,
 				A55BB5C91E6642C40022AEF1 /* BaseViewController.m */,
-				A55BB5DE1E6729410022AEF1 /* DetailsView.h */,
-				A55BB5DF1E6729410022AEF1 /* DetailsView.m */,
-				A55BB5E11E6729700022AEF1 /* DetailsView.xib */,
 			);
 			name = Detail;
 			sourceTree = "<group>";
@@ -334,7 +308,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5CDD2A11E65B1EA000AD393 /* Database.db in Resources */,
-				A55BB5E21E6729700022AEF1 /* DetailsView.xib in Resources */,
 				A50C6EB71E658973002EF87D /* LaunchScreen.storyboard in Resources */,
 				A50C6EB41E658973002EF87D /* Assets.xcassets in Resources */,
 				A55BB5D11E667D3E0022AEF1 /* juju.JPG in Resources */,
@@ -365,10 +338,7 @@
 			files = (
 				A5CDD29D1E65AF58000AD393 /* ChapterViewController.m in Sources */,
 				A55BB5CA1E6642C40022AEF1 /* BaseViewController.m in Sources */,
-				A55BB5E01E6729410022AEF1 /* DetailsView.m in Sources */,
-				A55BB5D81E670BDA0022AEF1 /* HighlightingTextStorage.m in Sources */,
 				A50C6EAC1E658973002EF87D /* AppDelegate.m in Sources */,
-				A55BB5CF1E6669E60022AEF1 /* LayoutManager.m in Sources */,
 				A5CDD2A71E65BF72000AD393 /* DBAccess.m in Sources */,
 				A50C6EA91E658973002EF87D /* main.m in Sources */,
 			);

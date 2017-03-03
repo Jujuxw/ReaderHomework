@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#import "LayoutManager.h"
-
 #import "DBAccess.h"
 
 #import <CoreText/CoreText.h>
